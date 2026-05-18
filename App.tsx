@@ -70,7 +70,7 @@ const APPS: AppEntry[] = [
   { id: 'screentime-analyzer', name: 'Screentime Analyzer', description: 'Tracks screen time + AI analysis + actionable recommendations · backlogged', url: 'about:blank', category: 'Coming Soon', icon: '📱', tier: 'app' },
   { id: 'smart-calendar', name: 'Smart Calendar', description: 'AI-context-aware calendar · click an entry → pull AI context · backlogged', url: 'about:blank', category: 'Coming Soon', icon: '📆', tier: 'app' },
   { id: 'magic-closet', name: 'Magic Closet', description: 'Wardrobe + AI outfit suggestions · Expo scaffold exists · backlogged', url: 'about:blank', category: 'Coming Soon', icon: '👔', tier: 'app' },
-  { id: 'theme-park-waits', name: 'Theme Park Waits', description: 'AI-powered ride wait times · user-contributed data · backlogged', url: 'about:blank', category: 'Coming Soon', icon: '🎢', tier: 'app' },
+  { id: 'park-waits', name: 'Park Waits', description: 'Live ride wait times · queue-times.com data · 15 parks incl. Six Flags Over Georgia', url: `${HUB_BASE}/park-waits/`, category: 'Apps', icon: '🎢', tier: 'app' },
   { id: 'pickit-app', name: 'PickIt', description: 'Group voting app · in progress, not yet submitted to Play Store · expansion roadmap (ranked choice, brackets, real-time)', url: 'about:blank', category: 'Coming Soon', icon: '🗳️', tier: 'app' },
 
   // === COMPANION (live as their own deployments, kept for one-tap access) ===
