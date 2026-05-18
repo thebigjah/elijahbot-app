@@ -63,13 +63,26 @@ Two options:
 
 ### Update the app
 
-When Elijah changes the apps list (App.tsx) or wants to add new tools:
+THREE update paths depending on what changed:
 
-1. Edit `App.tsx` — update the APPS array
-2. Bump version in `app.json`
-3. `npx eas-cli build --platform android --profile preview`
-4. Send the new APK to testers
-5. They install over the old version (data preserved)
+**A) APPS array tweak or App.tsx visual change → OTA update (~30 sec, no rebuild)**
+```
+git add -A && git commit -m "tweak apps list"
+npx eas-cli update --branch preview --message "updated apps list"
+```
+Testers' devices download the JS update silently on next app launch. No reinstall.
+
+**B) A tool the master WebViews to (Echo gets new questions, etc.)**
+Just push to the relevant repo. Vercel auto-redeploys in ~30 sec. Master app sees new version on next launch (or refresh).
+
+**C) Master app shell changes (new native dep, branding, SDK upgrade, icon, app.json)**
+```
+# Bump version in app.json first
+npx eas-cli build --platform android --profile preview
+# Send new APK URL, testers reinstall — AsyncStorage data preserved
+```
+
+Most updates are A or B. Path C only when you genuinely change the native shell.
 
 ## Security note
 
