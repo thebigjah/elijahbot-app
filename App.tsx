@@ -65,7 +65,7 @@ const APPS: AppEntry[] = [
   { id: 'prayer-walk', name: 'Prayer Walk', description: 'GPS-tracked prayer walks · recency heatmap · native APK (tap to install)', url: 'https://expo.dev/artifacts/eas/aT5ufmwQVBGzKhotw12GKs.apk', category: 'Apps', icon: '🚶', tier: 'app' },
 
   // === COMING SOON (backlog apps Elijah has scoped but not yet built) ===
-  { id: 'longitude', name: 'Longitude', description: 'Slow pen-pal · message a random person your age · 1-day to 1-month delivery delay · backlogged', url: 'about:blank', category: 'Coming Soon', icon: '✉️', tier: 'app' },
+  { id: 'longitude', name: 'Longitude', description: 'Slow letters · seal a message until a future date · v0.05 web', url: `${HUB_BASE}/longitude/`, category: 'Apps', icon: '✉️', tier: 'app' },
   { id: 'screentime-analyzer', name: 'Screentime Analyzer', description: 'Tracks screen time + AI analysis + actionable recommendations · backlogged', url: 'about:blank', category: 'Coming Soon', icon: '📱', tier: 'app' },
   { id: 'smart-calendar', name: 'Smart Calendar', description: 'AI-context-aware calendar · click an entry → pull AI context · backlogged', url: 'about:blank', category: 'Coming Soon', icon: '📆', tier: 'app' },
   { id: 'magic-closet', name: 'Magic Closet', description: 'Wardrobe + AI outfit suggestions · Expo scaffold exists · backlogged', url: 'about:blank', category: 'Coming Soon', icon: '👔', tier: 'app' },
