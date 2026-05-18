@@ -66,11 +66,12 @@ const APPS: AppEntry[] = [
 
   // === COMING SOON (backlog apps Elijah has scoped but not yet built) ===
   { id: 'longitude', name: 'Longitude', description: 'Slow letters · seal a message until a future date · v0.05 web', url: `${HUB_BASE}/longitude/`, category: 'Apps', icon: '✉️', tier: 'app' },
+  { id: 'stage-fright', name: 'Stage Fright', description: 'Pre-call voice mirror · WPM, fillers, volume variance vs. your calm baseline · 20-sec record', url: `${HUB_BASE}/stage-fright/`, category: 'Apps', icon: '🎙️', tier: 'app' },
   { id: 'screentime-analyzer', name: 'Screentime Analyzer', description: 'Tracks screen time + AI analysis + actionable recommendations · backlogged', url: 'about:blank', category: 'Coming Soon', icon: '📱', tier: 'app' },
   { id: 'smart-calendar', name: 'Smart Calendar', description: 'AI-context-aware calendar · click an entry → pull AI context · backlogged', url: 'about:blank', category: 'Coming Soon', icon: '📆', tier: 'app' },
   { id: 'magic-closet', name: 'Magic Closet', description: 'Wardrobe + AI outfit suggestions · Expo scaffold exists · backlogged', url: 'about:blank', category: 'Coming Soon', icon: '👔', tier: 'app' },
   { id: 'theme-park-waits', name: 'Theme Park Waits', description: 'AI-powered ride wait times · user-contributed data · backlogged', url: 'about:blank', category: 'Coming Soon', icon: '🎢', tier: 'app' },
-  { id: 'pickit-app', name: 'PickIt (expanded)', description: 'Group voting app · already on Play Store · expansion roadmap', url: 'https://play.google.com/store/apps/details?id=com.purcellventures.pickit', category: 'Coming Soon', icon: '🗳️', tier: 'app' },
+  { id: 'pickit-app', name: 'PickIt', description: 'Group voting app · in progress, not yet submitted to Play Store · expansion roadmap (ranked choice, brackets, real-time)', url: 'about:blank', category: 'Coming Soon', icon: '🗳️', tier: 'app' },
 
   // === COMPANION (live as their own deployments, kept for one-tap access) ===
   { id: 'elijahbot-refresh', name: 'ElijahBot Refresh', description: 'Personal accountability chatbot · Google sign-in · live in production', url: 'https://elijahbot-refresh.vercel.app', category: 'Companion Apps', icon: '🔄', tier: 'companion' },
