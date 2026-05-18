@@ -30,8 +30,17 @@
         "projectId": "REPLACE_WITH_PROJECT_ID_AFTER_EAS_INIT"
       }
     },
+    "updates": {
+      "enabled": true,
+      "url": "https://u.expo.dev/REPLACE_WITH_PROJECT_ID_AFTER_EAS_INIT",
+      "fallbackToCacheTimeout": 0,
+      "checkAutomatically": "ON_LOAD"
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
     "plugins": [
-      "expo-router"
+      "expo-updates"
     ]
   }
 }
