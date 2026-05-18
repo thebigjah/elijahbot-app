@@ -1,0 +1,16 @@
+node_modules/
+.expo/
+dist/
+npm-debug.*
+*.jks
+*.keystore
+*.p12
+*.pem
+*.cer
+*.mobileprovision
+*.orig.*
+web-build/
+.env
+.env.local
+ios/
+android/

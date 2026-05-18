@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "ElijahBot",
+    "slug": "elijahbot-app",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0a0a14"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "co.purcellventures.elijahbotapp"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#0a0a14"
+      },
+      "package": "co.purcellventures.elijahbotapp"
+    },
+    "web": {
+      "favicon": "./assets/icon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "REPLACE_WITH_PROJECT_ID_AFTER_EAS_INIT"
+      }
+    },
+    "plugins": [
+      "expo-router"
+    ]
+  }
+}
