@@ -17,7 +17,7 @@
     "expo-status-bar": "~3.0.9",
     "react": "19.1.0",
     "react-native": "0.81.5",
-    "react-native-webview": "13.16.2"
+    "react-native-webview": "13.16.1"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
