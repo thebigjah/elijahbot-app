@@ -52,53 +52,52 @@ type AppEntry = {
 };
 
 const APPS: AppEntry[] = [
-  // === TIER 1 — APPS (deserve native dev arc, marketing as standalone products) ===
-  { id: 'echo', name: 'Echo', description: 'Guided life-story interview · multi-session workflow · printable artifact', url: `${HUB_BASE}/echo/`, category: 'Apps', icon: '👴', tier: 'app' },
-  { id: 'counter-argument', name: 'Counter', description: 'Apologetics practice · 12 topics · answer-first discipline + expert reveal', url: `${HUB_BASE}/counter-argument/`, category: 'Apps', icon: '⚖️', tier: 'app' },
-  { id: 'decision-journal', name: 'Decision Journal', description: 'Annie Duke calibration · review-date push reminders · multi-year practice', url: `${HUB_BASE}/decision-journal/`, category: 'Apps', icon: '🎯', tier: 'app' },
-  { id: 'verse-vault', name: 'Verse Vault', description: 'Scripture memorization · 5-level progressive hide · spaced repetition (planned)', url: `${HUB_BASE}/verse-vault/`, category: 'Apps', icon: '📖', tier: 'app' },
-  { id: 'friendship-map', name: 'Friendship Map', description: 'Personal CRM by tier · push when overdue · contact integration (planned)', url: `${HUB_BASE}/friendship-map/`, category: 'Apps', icon: '🤝', tier: 'app' },
-  { id: 'prayer-journal', name: 'Prayer Journal', description: 'Multi-year ACTS journaling · answered-prayer log · encrypted backup (planned)', url: `${HUB_BASE}/prayer-journal/`, category: 'Apps', icon: '🙏', tier: 'app' },
-  { id: 'worship-set', name: 'Worship Set', description: 'Multi-set library · band collaboration (planned) · BPM + key flow viz', url: `${HUB_BASE}/worship-set/`, category: 'Apps', icon: '🎵', tier: 'app' },
+  // === TIER 1 — APPS (the ones Elijah originally conceived as apps, not utilities) ===
+  { id: 'echo', name: 'Echo', description: 'Guided life-story interview · 60 questions · printable life document', url: `${HUB_BASE}/echo/`, category: 'Apps', icon: '👴', tier: 'app' },
+  { id: 'hangout', name: 'Steal My Hangout', description: '20 hangout ideas mapped · roll the dice · share lists with friends', url: `${HUB_BASE}/hangout/`, category: 'Apps', icon: '🍽️', tier: 'app' },
+  { id: 'momentum', name: 'Momentum', description: 'One intention per day · scripture rotation · 365-day heatmap', url: `${HUB_BASE}/momentum/`, category: 'Apps', icon: '🌅', tier: 'app' },
+  { id: 'rival', name: 'Rival', description: 'Self-competition metric tracker · daily logging · sparklines + heatmaps', url: `${HUB_BASE}/rival/`, category: 'Apps', icon: '⚔️', tier: 'app' },
+  { id: 'era', name: 'Era', description: 'Step into a historical year · no hindsight · 12 hand-curated years', url: `${HUB_BASE}/era/`, category: 'Apps', icon: '🕰️', tier: 'app' },
+  // Prayer Walk: native APK lives separately. Tile here links to the install instead of WebView.
+  { id: 'prayer-walk', name: 'Prayer Walk', description: 'GPS-tracked prayer walks · recency heatmap · native APK (tap to install)', url: 'https://expo.dev/artifacts/eas/aT5ufmwQVBGzKhotw12GKs.apk', category: 'Apps', icon: '🚶', tier: 'app' },
 
-  // === TIER 2 — TOOLS (single-screen utilities, no native version needed) ===
+  // === TIER 2 — TOOLS (single-screen utilities) ===
 
-  // -- Faith + Devotional --
-  { id: 'examen', name: 'Examen', description: 'Ignatian end-of-day prayer in 5 movements', url: `${HUB_BASE}/examen/`, category: 'Faith Tools', icon: '🕯️', tier: 'tool' },
-  { id: 'sermon-notes', name: 'Sermon Notes', description: 'Sunday note capture + stats panel', url: `${HUB_BASE}/sermon-notes/`, category: 'Faith Tools', icon: '📝', tier: 'tool' },
-  { id: 'solomon', name: 'Solomon', description: 'Daily wisdom quote rotation', url: `${HUB_BASE}/solomon/`, category: 'Faith Tools', icon: '💎', tier: 'tool' },
-  { id: 'calvinism-test', name: 'Calvinism Test', description: 'TULIP self-assessment', url: `${HUB_BASE}/calvinism-test/`, category: 'Faith Tools', icon: '🌷', tier: 'tool' },
+  // -- Faith + Discipline --
+  { id: 'verse-vault', name: 'Verse Vault', description: 'Scripture memorization with 5-level progressive hide', url: `${HUB_BASE}/verse-vault/`, category: 'Faith + Discipline', icon: '📖', tier: 'tool' },
+  { id: 'prayer-journal', name: 'Prayer Journal', description: 'ACTS framework + answered prayer log', url: `${HUB_BASE}/prayer-journal/`, category: 'Faith + Discipline', icon: '🙏', tier: 'tool' },
+  { id: 'examen', name: 'Examen', description: 'Ignatian end-of-day prayer in 5 movements', url: `${HUB_BASE}/examen/`, category: 'Faith + Discipline', icon: '🕯️', tier: 'tool' },
+  { id: 'counter-argument', name: 'Counter', description: 'Apologetics practice — 12 hard objections', url: `${HUB_BASE}/counter-argument/`, category: 'Faith + Discipline', icon: '⚖️', tier: 'tool' },
+  { id: 'worship-set', name: 'Worship Set', description: 'Sunday setlist planner', url: `${HUB_BASE}/worship-set/`, category: 'Faith + Discipline', icon: '🎵', tier: 'tool' },
+  { id: 'sermon-notes', name: 'Sermon Notes', description: 'Sunday note capture + stats', url: `${HUB_BASE}/sermon-notes/`, category: 'Faith + Discipline', icon: '📝', tier: 'tool' },
+  { id: 'solomon', name: 'Solomon', description: 'Daily wisdom rotation', url: `${HUB_BASE}/solomon/`, category: 'Faith + Discipline', icon: '💎', tier: 'tool' },
+  { id: 'calvinism-test', name: 'Calvinism Test', description: 'TULIP self-assessment', url: `${HUB_BASE}/calvinism-test/`, category: 'Faith + Discipline', icon: '🌷', tier: 'tool' },
 
-  // -- Personal Growth --
-  { id: 'brag-doc', name: 'Brag Doc', description: 'Wins log + dark-day shuffler', url: `${HUB_BASE}/brag-doc/`, category: 'Personal Growth Tools', icon: '🏆', tier: 'tool' },
-  { id: 'future-self', name: 'Future Self', description: 'Sealed letters with date-locked release', url: `${HUB_BASE}/future-self/`, category: 'Personal Growth Tools', icon: '✉️', tier: 'tool' },
-  { id: 'rival', name: 'Rival', description: 'Self-competition metric tracker', url: `${HUB_BASE}/rival/`, category: 'Personal Growth Tools', icon: '⚔️', tier: 'tool' },
-  { id: 'momentum', name: 'Momentum', description: 'One intention a day + scripture + heatmap', url: `${HUB_BASE}/momentum/`, category: 'Personal Growth Tools', icon: '🌅', tier: 'tool' },
-  { id: 'reading-log', name: 'Reading Log', description: 'Personal Goodreads — local only', url: `${HUB_BASE}/reading-log/`, category: 'Personal Growth Tools', icon: '📚', tier: 'tool' },
-  { id: 'weekly-skill', name: 'Weekly Skill', description: 'New fun skill each ISO week', url: `${HUB_BASE}/weekly-skill/`, category: 'Personal Growth Tools', icon: '🎓', tier: 'tool' },
-  { id: 'wisdom-prep', name: 'Wisdom Prep', description: '5-min mentor conversation prep', url: `${HUB_BASE}/wisdom-prep/`, category: 'Personal Growth Tools', icon: '🧠', tier: 'tool' },
+  // -- Productivity + Growth --
+  { id: 'decision-journal', name: 'Decision Journal', description: 'Annie Duke style calibration tracker', url: `${HUB_BASE}/decision-journal/`, category: 'Productivity + Growth', icon: '🎯', tier: 'tool' },
+  { id: 'brag-doc', name: 'Brag Doc', description: 'Wins log + dark-day shuffler', url: `${HUB_BASE}/brag-doc/`, category: 'Productivity + Growth', icon: '🏆', tier: 'tool' },
+  { id: 'friendship-map', name: 'Friendship Map', description: 'Personal CRM by tier', url: `${HUB_BASE}/friendship-map/`, category: 'Productivity + Growth', icon: '🤝', tier: 'tool' },
+  { id: 'future-self', name: 'Future Self', description: 'Sealed letters with date-locked release', url: `${HUB_BASE}/future-self/`, category: 'Productivity + Growth', icon: '✉️', tier: 'tool' },
+  { id: 'reading-log', name: 'Reading Log', description: 'Personal Goodreads', url: `${HUB_BASE}/reading-log/`, category: 'Productivity + Growth', icon: '📚', tier: 'tool' },
+  { id: 'weekly-skill', name: 'Weekly Skill', description: 'New fun skill each week', url: `${HUB_BASE}/weekly-skill/`, category: 'Productivity + Growth', icon: '🎓', tier: 'tool' },
+  { id: 'wisdom-prep', name: 'Wisdom Prep', description: 'Mentor conversation prep', url: `${HUB_BASE}/wisdom-prep/`, category: 'Productivity + Growth', icon: '🧠', tier: 'tool' },
 
   // -- Business + Lead-gen --
-  { id: 'ai-readiness-test', name: 'AI Readiness Test', description: '10-question SMB diagnostic', url: `${HUB_BASE}/ai-readiness-test/`, category: 'Business Tools', icon: '📊', tier: 'tool' },
-  { id: 'ai-cost-calculator', name: 'AI Cost Calculator', description: 'Interactive ROI for automation', url: `${HUB_BASE}/ai-cost-calculator/`, category: 'Business Tools', icon: '💰', tier: 'tool' },
-  { id: 'ai-will', name: 'AI Will', description: '30-min business continuity interview', url: `${HUB_BASE}/ai-will/`, category: 'Business Tools', icon: '🏢', tier: 'tool' },
+  { id: 'ai-readiness-test', name: 'AI Readiness Test', description: '10-question SMB diagnostic', url: `${HUB_BASE}/ai-readiness-test/`, category: 'Business', icon: '📊', tier: 'tool' },
+  { id: 'ai-cost-calculator', name: 'AI Cost Calculator', description: 'Interactive ROI for automation', url: `${HUB_BASE}/ai-cost-calculator/`, category: 'Business', icon: '💰', tier: 'tool' },
+  { id: 'ai-will', name: 'AI Will', description: '30-min business continuity interview', url: `${HUB_BASE}/ai-will/`, category: 'Business', icon: '🏢', tier: 'tool' },
 
   // -- UA + Planning --
-  { id: 'milestone', name: 'Milestone', description: 'Visual countdown grid of upcoming events', url: `${HUB_BASE}/milestone/`, category: 'UA + Planning Tools', icon: '⏳', tier: 'tool' },
-  { id: 'dorm-pack', name: 'Dorm Pack', description: 'UA move-in packing checklist', url: `${HUB_BASE}/dorm-pack/`, category: 'UA + Planning Tools', icon: '📦', tier: 'tool' },
-  { id: 'day-sheet', name: 'Day Sheet', description: 'Printable daily planner', url: `${HUB_BASE}/day-sheet/`, category: 'UA + Planning Tools', icon: '📅', tier: 'tool' },
-
-  // -- Connection + Story --
-  { id: 'hangout', name: 'Steal My Hangout', description: '20 Atlanta hangout ideas mapped', url: `${HUB_BASE}/hangout/`, category: 'Connection Tools', icon: '🍽️', tier: 'tool' },
-  { id: 'era', name: 'Era', description: 'Step into a historical year — 12 years curated', url: `${HUB_BASE}/era/`, category: 'Connection Tools', icon: '🕰️', tier: 'tool' },
+  { id: 'milestone', name: 'Milestone', description: 'Visual countdown grid of upcoming events', url: `${HUB_BASE}/milestone/`, category: 'UA + Planning', icon: '⏳', tier: 'tool' },
+  { id: 'dorm-pack', name: 'Dorm Pack', description: 'UA move-in packing checklist', url: `${HUB_BASE}/dorm-pack/`, category: 'UA + Planning', icon: '📦', tier: 'tool' },
+  { id: 'day-sheet', name: 'Day Sheet', description: 'Printable daily planner', url: `${HUB_BASE}/day-sheet/`, category: 'UA + Planning', icon: '📅', tier: 'tool' },
 
   // -- Cryptography --
-  { id: 'cipher-lab', name: 'Cipher Lab', description: '6 classical ciphers + puzzle hunt builder', url: `${HUB_BASE}/cipher-lab/`, category: 'Cryptography Tools', icon: '🔐', tier: 'tool' },
+  { id: 'cipher-lab', name: 'Cipher Lab', description: '6 classical ciphers + puzzle hunt builder', url: `${HUB_BASE}/cipher-lab/`, category: 'Cryptography', icon: '🔐', tier: 'tool' },
 
-  // === TIER 3 — COMPANION APPS (live at their own URLs/installs) ===
+  // === TIER 3 — COMPANION (live as their own deployments) ===
   { id: 'elijahbot-refresh', name: 'ElijahBot Refresh', description: 'Personal accountability chatbot · Google sign-in · live in production', url: 'https://elijahbot-refresh.vercel.app', category: 'Companion Apps', icon: '🔄', tier: 'companion' },
-  { id: 'coverage', name: 'Prayer Walk (web)', description: 'GPS-tracked walks · web sandbox · iOS Safari compatible', url: 'https://coverage-bice.vercel.app', category: 'Companion Apps', icon: '🚶', tier: 'companion' },
-  { id: 'purcell-ventures', name: 'Purcell Ventures', description: 'The business front door · 4 service divisions · consulting bookings', url: 'https://purcellventures.co', category: 'Companion Apps', icon: '🏢', tier: 'companion' },
+  { id: 'purcell-ventures', name: 'Purcell Ventures', description: 'The business front door · consulting bookings', url: 'https://purcellventures.co', category: 'Companion Apps', icon: '🏢', tier: 'companion' },
 ];
 
 // === COMPONENTS =================================================
